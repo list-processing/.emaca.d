@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: funny
+# key: funny
+# expand-env: ((yas-indent-line 'auto) (yas-also-auto-indent-first-line t) (yas-wrap-around-region t))
+# --
+
+for $1;$2;$3 {
+  $0
+}

@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: Header File Template
+# key: HEADER
+# --
+
+/*
+   Authhor: lffan.liu
+   Time:`(format-time-string "%c")`
+   File: `(buffer-name)`
+*/
+
+package main
+
+import (
+	"fmt"$1
+)
+
+
+func main() {
+	$2fmt.Println("Hello world")
+}
