@@ -15,7 +15,8 @@ import (
 	"fmt"$1
 )
 
+$2
 
 func main() {
-	$2fmt.Println("Hello world")
+	$3fmt.Println("Hello world")
 }

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: func
+# key: func
+# --
+func ${1:(v *Vertex)} ${2:FuncName}(${3:f float64}) ${4:(float64)} {
+     $0
+}
