@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sprintf
+# key: sprintf
+# --
+fmt.Sprintf("$1", $2)$0
