@@ -1,0 +1,19 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("(emacs) Bookmarks"
+ (front-context-string . "\n13.8 Bookmarks\n")
+ (rear-context-string . "  Up: Registers\n")
+ (position . 251264)
+ (filename . "d:/opt/emacs/share/info/emacs")
+ (info-node . "Bookmarks")
+ (handler . Info-bookmark-jump))
+("(emacs) Rectangles"
+ (front-context-string . "column, the regi")
+ (rear-context-string . "are in the same\n")
+ (position . 232288)
+ (filename . "d:/opt/emacs/share/info/emacs")
+ (info-node . "Rectangles")
+ (handler . Info-bookmark-jump))
+)
