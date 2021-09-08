@@ -1,13 +1,25 @@
-(require 'package)
-(add-to-list 'package-archives
-	     '("melpa" . "https://melpa.org/packages/") t)
-;; Comment/uncomment this line to enable MELPA Stable if desired.
-;; See `package-archive-priorities`
-;; and `package-pinned-packages`. Most users will not need or want
-;; to do this.
-;;(add-to-list 'package-archives
-;;           '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(package-initialize)
+(require 'package)                   ; Bring in to the environment all package management functions
+
+;; A list of package repositories
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("org"   . "https://orgmode.org/elpa/")
+                         ("elpa"  . "https://elpa.gnu.org/packages/")))
+
+(package-initialize)                 ; Initializes the package system and prepares it to be used
+
+(unless package-archive-contents     ; Unless a package archive already exists,
+  (package-refresh-contents))        ; Refresh package contents so that Emacs knows which packages to load
+
+
+;; Initialize use-package on non-linux platforms
+(unless (package-installed-p 'use-package)        ; Unless "use-package" is installed, install "use-package"
+  (package-install 'use-package))
+
+(require 'use-package)                            ; Once it's installed, we load it using require
+
+;; Make sure packages are downloaded and installed before they are run
+;; also frees you from having to put :ensure t after installing EVERY PACKAGE.
+(setq use-package-always-ensure t)
 
 (set-keyboard-coding-system 'utf-8)
 (set-clipboard-coding-system 'utf-8)
